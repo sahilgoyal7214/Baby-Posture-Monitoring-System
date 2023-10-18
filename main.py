@@ -102,7 +102,7 @@ if uploaded_files is not None:
                 if rf==['rside']:
                     pridicted.append(list(rf))
                 if svm==['back']:
-                    pridicted.append(list(svm)[1])
+                    pridicted.append(list(svm))
                 if svm==['lside']:
                     pridicted.append(list(svm))
                 if svm==['rside']:
