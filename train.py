@@ -1,13 +1,9 @@
 import os
 import pandas as pd
 import numpy as np
-import torch
 import pickle
 import matplotlib.pyplot as plt
-from torchvision import transforms
 from sklearn.model_selection import validation_curve
-from PIL import Image
-from torch.utils.data import Dataset, DataLoader
 from skimage.feature import hog
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
