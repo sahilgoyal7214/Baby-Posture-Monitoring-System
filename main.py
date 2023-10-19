@@ -23,7 +23,7 @@ st.write(os.getcwd())
 l= []
 pridicted=[]
 l2=[]
-d = {'back':'images//back.jpg','lside':'images//left side.jpeg','rside':'images//right side.jpeg'}
+d = {'back':'back.jpg','lside':'left side.jpeg','rside':'right side.jpeg'}
 d1 = {'back':'back','lside':'left side','rside':'right side'}
 s = ["KNN","RF","SVM"]
 
@@ -59,36 +59,36 @@ if uploaded_files is not None:
 
                 knn=knn_classifier_uncovered.predict(uploaded_files)
                 if knn==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif knn==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif knn==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='RF':
                 rf=rf_classifier_uncovered.predict(uploaded_files)
                 if rf==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif rf==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif rf==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
 
             elif model_type=='SVM':
                 svm=svm_classifier_uncovered.predict(uploaded_files)
                 if svm==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif svm==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif svm==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='ALL':
                 knn=knn_classifier_uncovered.predict(uploaded_files)
@@ -116,35 +116,35 @@ if uploaded_files is not None:
             if model_type=='KNN':
                 knn_cover2=knn_classifier_cover2.predict(uploaded_files)
                 if knn_cover2==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif knn_cover2==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif knn_cover2==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='RF':
                 rf_cover2=rf_classifier_cover2.predict(uploaded_files)
                 if rf_cover2==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif rf_cover2==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif rf_cover2==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='SVM':
                 svm_cover2=svm_classifier_cover2.predict(uploaded_files)
                 if svm_cover2==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif svm_cover2==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif svm_cover2==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='ALL':
                 knn_cover2=knn_classifier_cover2.predict(uploaded_files)
@@ -172,32 +172,32 @@ if uploaded_files is not None:
             if model_type=='KNN':
                 knn_cover1=knn_classifier_cover1.predict(uploaded_files)
                 if knn_cover1==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif knn_cover1==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif knn_cover1==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='RF':
                 rf_cover1=rf_classifier_cover1.predict(uploaded_files)
                 if rf_cover1==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif rf_cover1==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif rf_cover1==['rside']:
-                    st.image('images//right side.jpeg', width=200)
+                    st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
             elif model_type=='SVM':
                 svm_cover1=svm_classifier_cover1.predict(uploaded_files)
                 if svm_cover1==['back']:
-                    st.image('images//back.jpg', width=200)
+                    st.image('back.jpg', width=200)
                     st.success('Predicted Label: back')
                 elif svm_cover1==['lside']:
-                    st.image('images//left side.jpeg', width=200)
+                    st.image('left side.jpeg', width=200)
                     st.success('Predicted Label: left side')
                 elif svm_cover1==['rside']:
                     st.image('right side.jpeg', width=200)
