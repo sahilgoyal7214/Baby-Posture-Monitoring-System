@@ -3,9 +3,9 @@ import numpy as np
 import joblib 
 
 
-knn_classifier_uncovered= joblib.load(r"models\knn_classifier_uncovered.sav")
-rf_classifier_uncovered= joblib.load(r"models\rf_classifier_uncovered.sav")
-svm_classifier_uncovered= joblib.load(r"models\svm_classifier_uncovered.sav")
+knn_classifier_uncovered= joblib.load(r"\models\knn_classifier_uncovered.sav")
+rf_classifier_uncovered= joblib.load(r"\models\rf_classifier_uncovered.sav")
+svm_classifier_uncovered= joblib.load(r"\models\svm_classifier_uncovered.sav")
 
 knn_classifier_cover1= joblib.load(r"models\knn_classifier_cover1.sav")
 rf_classifier_cover1= joblib.load(r"models\rf_classifier_cover1.sav")
