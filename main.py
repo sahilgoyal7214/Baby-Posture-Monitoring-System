@@ -8,7 +8,7 @@ st.write(os.getcwd())
 
 knn_classifier_uncovered= joblib.load("knn_classifier_uncovered.sav")
 rf_classifier_uncovered= joblib.load("rf_classifier_uncovered.sav")
-# svm_classifier_uncovered= joblib.load("svm_classifier_uncovered.sav")
+'''svm_classifier_uncovered= joblib.load("svm_classifier_uncovered.sav")'''
 
 knn_classifier_cover1= joblib.load("knn_classifier_cover1.sav")
 rf_classifier_cover1= joblib.load("rf_classifier_cover1.sav")
