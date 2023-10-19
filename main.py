@@ -6,8 +6,8 @@ import os
 os.chdir('/app/baby-posture-monitoring-system/models')
 st.write(os.getcwd())
 
-knn_classifier_uncovered= joblib.load(r"\models\knn_classifier_uncovered.sav")
-rf_classifier_uncovered= joblib.load(r"\models\rf_classifier_uncovered.sav")
+knn_classifier_uncovered= joblib.load("knn_classifier_uncovered.sav")
+rf_classifier_uncovered= joblib.load("rf_classifier_uncovered.sav")
 svm_classifier_uncovered= joblib.load(r"\models\svm_classifier_uncovered.sav")
 
 knn_classifier_cover1= joblib.load(r"models\knn_classifier_cover1.sav")
