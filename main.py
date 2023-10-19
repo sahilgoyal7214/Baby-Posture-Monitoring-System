@@ -50,7 +50,7 @@ uploaded_files = st.file_uploader("Upload Baby Image in npy format", accept_mult
 if uploaded_files is not None:
     uploaded_files = np.load(uploaded_files)
     option = st.selectbox('what type of image you uploaded?',    ('SELECT','Uncovered', 'cover1', 'cover2'))
-    model_type = st.selectbox('Select Model Type',    ('SELECT','KNN', 'RF', 'SVM','ALL'))
+    model_type = st.selectbox('Select Model Type',    ('SELECT','KNN', 'Random Forest', 'SVM','ALL'))
     if st.button("Predict"):
         if option=='Uncovered':
             if model_type=='KNN':
@@ -65,7 +65,7 @@ if uploaded_files is not None:
                 elif knn==['rside']:
                     st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
-            elif model_type=='RF':
+            elif model_type=='Random Forest':
                 rf=rf_classifier_uncovered.predict(uploaded_files)
                 if rf==['back']:
                     st.image('back.jpg', width=200)
@@ -122,7 +122,7 @@ if uploaded_files is not None:
                 elif knn_cover2==['rside']:
                     st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
-            elif model_type=='RF':
+            elif model_type=='Random Forest':
                 rf_cover2=rf_classifier_cover2.predict(uploaded_files)
                 if rf_cover2==['back']:
                     st.image('back.jpg', width=200)
@@ -178,7 +178,7 @@ if uploaded_files is not None:
                 elif knn_cover1==['rside']:
                     st.image('right side.jpeg', width=200)
                     st.success('Predicted Label: right side')
-            elif model_type=='RF':
+            elif model_type=='Random Forest':
                 rf_cover1=rf_classifier_cover1.predict(uploaded_files)
                 if rf_cover1==['back']:
                     st.image('back.jpg', width=200)
