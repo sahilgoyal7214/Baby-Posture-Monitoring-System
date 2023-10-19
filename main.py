@@ -3,7 +3,8 @@ import numpy as np
 import joblib 
 import os 
 
-st.write(os. getcwd())
+os.chdir('/app/baby-posture-monitoring-system/models')
+st.write(os.getcwd())
 
 knn_classifier_uncovered= joblib.load(r"\models\knn_classifier_uncovered.sav")
 rf_classifier_uncovered= joblib.load(r"\models\rf_classifier_uncovered.sav")
