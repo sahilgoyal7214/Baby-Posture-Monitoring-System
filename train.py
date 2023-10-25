@@ -43,12 +43,6 @@ class InfantPoseCustomDataset():
     def __getitem__(self, idx):
         sample = self.data[idx]
 
-        # Apply the image transformation to each image in the sample
-        if self.transform:
-            sample["uncovered"] = [self.transform(image) for image in sample["uncovered"]]
-            sample["cover1"] = [self.transform(image) for image in sample["cover1"]]
-            sample["cover2"] = [self.transform(image) for image in sample["cover2"]]
-
         return sample
 
     def __len__(self):
