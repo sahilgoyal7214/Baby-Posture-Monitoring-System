@@ -3,7 +3,7 @@ import numpy as np
 import joblib 
 import os 
 
-os.chdir('/app/baby-posture-monitoring-system/models')
+os.chdir('/models')
 
 knn_classifier_uncovered= joblib.load("knn_classifier_uncovered.sav")
 rf_classifier_uncovered= joblib.load("rf_classifier_uncovered.sav")
@@ -17,7 +17,7 @@ knn_classifier_cover2= joblib.load("knn_classifier_cover2.sav")
 rf_classifier_cover2= joblib.load("rf_classifier_cover2.sav")
 svm_classifier_cover2= joblib.load("svm_classifier_cover2.sav")
 
-os.chdir('/app/baby-posture-monitoring-system/images')
+os.chdir('/images')
 l= []
 pridicted=[]
 l2=[]
